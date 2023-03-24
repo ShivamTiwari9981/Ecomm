@@ -1,0 +1,16 @@
+<div *ngIf="!isLogin">
+  <app-header></app-header>
+  <br>
+  <app-category></app-category>
+  <br>
+  <app-slider></app-slider>
+  <br>
+  <app-card></app-card>
+  <!-- <app-footer-before></app-footer-before> -->
+  <app-footer></app-footer>
+</div>
+<div *ngIf="isLogin">
+  <router-outlet></router-outlet>
+</div>
+
+
