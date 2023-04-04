@@ -12,8 +12,12 @@ import { SliderComponent } from './components/slider/slider.component';
 import { FooterBeforeComponent } from './components/footer-before/footer-before.component';
 import { CopyRightComponent } from './components/copy-right/copy-right.component';
 import { CardComponent } from './components/card/card.component';
-import { CategoryComponent } from './components/category/category.component';
-import { AdminComponent } from './components/admin/admin.component'
+ import { CategoryComponent } from './components/category/category.component';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { LoginComponent } from './Admin/Components/login/login.component';
+import { RegisterComponent } from './Admin/Components/register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +28,18 @@ import { AdminComponent } from './components/admin/admin.component'
     CopyRightComponent,
     CardComponent,
     CategoryComponent,
-    AdminComponent
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     // HeaderModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

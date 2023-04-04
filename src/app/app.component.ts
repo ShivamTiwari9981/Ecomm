@@ -7,5 +7,5 @@ import {HeaderComponent} from '../app/components/header/header.component'
 })
 export class AppComponent {
   title = 'ecomm';
- isLogin=false;
+ isLogin=true;
 }

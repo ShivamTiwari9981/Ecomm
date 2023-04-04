@@ -1,0 +1,15 @@
+
+<div class="container">
+<form [formGroup]="loginForm">
+  <div class="row">
+    <input  type="text" class="form-control" formControlName="name" placeholder="Enter User Name">
+  </div>
+  <div class="row">
+    <input type="password" class="form-control" placeholder="Enter Password">
+  </div>
+  <div class="row">
+    <button type="submit" class="btn btn-primary w-25 text-center" >Login</button>
+  </div>
+  <a routerLink="/signup" class="mt-1">SignUp Here</a>
+</form>
+</div>
